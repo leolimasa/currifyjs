@@ -10,7 +10,7 @@ Suppose you have a function that takes three arguments:
 	    return a + b + c;
     };
 
-You can create a curried version by passing in the number of arguments and the function to currify():
+You can create a curried version by passing in the number of arguments and the function into currify():
 
     var addCurr = currify(3, add);
 
@@ -22,3 +22,12 @@ Then, every time you call the function with less arguments than it takes, it wil
 
       var addA = addCurr(2,4);
       addA(4); // returns 10
+
+      // not sure why you'd want to do this, but it works
+      addCurr(2)(4)(6); // returns 12
+
+# More information
+
+If you want to know why this might be useful:
+
+(Currying in Javascript)[https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe]
