@@ -30,4 +30,4 @@ Then, every time you call the function with less arguments than it takes, it wil
 
 If you want to know why this might be useful:
 
-(Currying in Javascript)[https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe]
+https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe
